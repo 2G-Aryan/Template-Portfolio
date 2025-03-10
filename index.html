@@ -1,112 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Grid Layout</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
+      
 
-        .parent {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            gap: 16px;
-            padding: 20px;
-        }
-
-        /* General div styling */
-        .parent div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            color: white;
-            font-size: 1.2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Specific div styles */
-        .div1 {
-            grid-column: 1 / 3;
-            grid-row: 1 / 6;
-            background-color: #ff6b6b;
-        }
-
-        .div4 {
-            grid-column: 3 / 5;
-            grid-row: 4 / 6;
-            background-color: #1dd1a1;
-        }
-
-        .div5 {
-            grid-column: 3 / 5;
-            grid-row: 1 / 4;
-            background-color: #54a0ff;
-        }
-
-        .div6 {
-            grid-column: 5 / 8;
-            grid-row: 1 / 4;
-            background-color: #ff9f43;
-        }
-
-        .div7 {
-            grid-column: 5 / 8;
-            grid-row: 4 / 6;
-            background-color: #576574;
-        }
-
-
-
+      body {
         
-       
-    </style>
-</head>
-<body>
+        background-image: url(pexels-felixmittermeier-956999.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        color: white;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+      }
+
+      p, h1, h2{
+        color: gold; opacity: 0.5;
+        font-family: cursive;
+      }
+
+      .parent {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+          gap: 16px;
+          padding: 20px;
+      }
+
+      /* General div styling */
+      .parent div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          color: white;
+          font-size: 1.2rem;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          background-color: #252020;
+          opacity: 0.6;
+      }
+
+      /* Specific div styles */
+      .div1 {
+          grid-column: 1 / 3;
+          grid-row: 1 / 6;
+         
+      }
+
+      .div4 {
+          grid-column: 3 / 5;
+          grid-row: 4 / 6;
+         
+      }
+
+      .div5 {
+          grid-column: 3 / 5;
+          grid-row: 1 / 4;
+      }
+
+     .div5 .grd{
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      .div5 img{
+        width: 80px;
+        cursor: pointer;
+      } 
+
+      .div6 {
+          grid-column: 5 / 8;
+          grid-row: 1 / 4;
+          
+      }
+
+      ul{
+        list-style: none;
+        display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+      }
+
+      ul li img{
+        width: 80px;
+        
+      }
+
+      .div7 {
+          grid-column: 5 / 8;
+          grid-row: 4 / 6;
+          
+      }
+     
+      input{
+        width: 200px;
+    height: 23px;
+    padding: 3px;
+    border-radius: 10px;
+    margin: 10px;
+      }
+
+      
+     
+  </style>
+  </head>
+  <body>
     <div class="parent">
-        <div class="div1">
-            1
-            <h2>Profile</h2>
-            <p>Pratham Dubey</p>
-            <p>Web Developer</p>
-            <button>Contact Me</button>
-        </div>
-        <div class="div5">
-            5
-            <h2>Projects</h2>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-            </ul>
-        </div>
-        <div class="div6">
-            6
-            <h2>Skills</h2>
-            <p>HTML, CSS, JavaScript</p>
-            <p>React, Node.js</p>
-        </div>
-        <div class="div4">
-            4
-            <h2>Experience</h2>
-            <p>2 years at XYZ Company</p>
-            <p>cloud Engineer || Web Developer</p>
-        </div>
-        <div class="div7">
-            7
-            <h2>Contact</h2>
-            <p>Email: sample@gmail.com</p>
-            <p>LinkedIn: @prathamdubey</p>
-        </div>
-    </div>
-</body>
+      <div class="div1">
+          <h2><img src="img1-removebg-preview.png" height="300px" alt=""></h2>
+          <h1 style="color: gold; opacity: 0.5; font-family: cursive;">Aryan Upadhyay</h1>
+          <p>Web Developer</p><br>
+          <span>Passionate and detail-oriented Web Developer with expertise in HTML, CSS, JavaScript, React, Node.js, and modern web technologies. Experienced in building responsive, user-friendly websites and web applications. Proficient in front-end and back-end development, API integration, and performance optimization.</span>
+          <button style="padding: 10px; border-radius: 10px; background-color: gold; color: rgb(0, 0, 0); opacity: 0.9; margin-top: 20px;">Contact Me</button>
+      </div>
+      <div class="div5">
+        <h1>Projects</h1>
+          <div class="grd">
+        <div><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-512.png" alt="">Netflix Clone - Using HTML CSS</div>
+        <div><img src="https://cdn1.iconfinder.com/data/icons/business-2-70/256/Portfolio-256.png" alt="">Portfolio Website - Using HTML CSS</div>
+        <div><img src="https://cdn2.iconfinder.com/data/icons/social-icons-color/512/youtube-256.png" alt="">Youtube Clone- Using HTML CSS</div>
+        <div><img src="https://th.bing.com/th/id/R.5298291dcf99cd72c9444a2d4699e30b?rik=Rr5OUXVDuUEdmw&riu=http%3a%2f%2flite16.com%2fblog%2fwp-content%2fuploads%2f2021%2f07%2fdigital-marketing-4111002_1920-min.jpg&ehk=5LWIMswahzq2Y1E2HktnQEmylq%2fyx7qMdFWdRdjC3jY%3d&risl=&pid=ImgRaw&r=0" alt="">Digital Marketing Website - Using React js</div></div>
+      </div>
+      <div class="div6">
+          <h1>Skills</h1>
+          <ul>
+            <li><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-256.png" alt=""></li>
+            <li><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-256.png" alt=""></li>
+            <li><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-512.png" alt=""></li>
+            <li><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-256.png" alt=""></li>
+            <li><img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-256.png" alt=""></li>
+            <li><img src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-256.png" alt=""></li>
+          </ul>
+      </div>
+      <div class="div4">
+          
+          <h2>Experience</h2>
+          <p>Web Developer | Magic Bus Graduate</p>
+          <span>I have completed a web development course at Magic Bus, where I learned HTML, CSS, and responsive web design. Through this course, I gained hands-on experience in building websites, focusing on clean code and user-friendly design.</span>
+      </div>
+      <div class="div7">
+          <h2>Contact</h2>
+          <input type="text" placeholder="Enter Your Name" required>
+          <input type="email" placeholder="Enter Your Email" required>
+          <button style="padding: 10px; border-radius: 10px; background-color: gold; color: rgb(0, 0, 0); opacity: 0.9;">Send</button>
+          <ul style="display: flex;
+              margin: 30px; cursor: pointer;" >
+            <li><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-256.png" alt="" style="width: 40px;"></li>
+            <li><img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-gmail-256.png" alt="" style="width: 40px;"></li>
+            <li><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png" alt="" style="width: 40px;"></li>
+          </ul>
+      </div>
+  </div>
+  </body>
 </html>
+
+
+
+
